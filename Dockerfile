@@ -1,4 +1,4 @@
-FROM dankempster/composer:7.0
+FROM dankempster/composer:7.1
 
 MAINTAINER dev@dankempster.co.uk
 
