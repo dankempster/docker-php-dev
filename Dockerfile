@@ -1,4 +1,4 @@
-FROM dankempster/php:fpm-alpine
+FROM dankempster/php:7.0-fpm-alpine
 
 MAINTAINER dev@dankempster.co.uk
 
