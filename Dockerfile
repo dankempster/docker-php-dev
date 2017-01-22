@@ -1,4 +1,4 @@
-FROM dankempster/composer:latest
+FROM dankempster/php:fpm
 
 MAINTAINER dev@dankempster.co.uk
 
