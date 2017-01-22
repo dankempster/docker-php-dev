@@ -1,4 +1,4 @@
-FROM dankempster/php:fpm
+FROM dankempster/php:5.6-fpm
 
 MAINTAINER dev@dankempster.co.uk
 
