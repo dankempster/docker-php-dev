@@ -1,0 +1,21 @@
+language: php
+php:
+  - 7.0
+
+services:
+  - docker
+
+install:
+  - docker build -t php .
+
+script:
+  - docker run --rm php -v
+  - docker run --rm php -i | grep "xdebug support => enabled"
+  # TODO Test for PHP error level
+  - docker run --rm php -i | grep "error_reporting => 32767"
+
+branches:
+    only:
+        - alpine
+        - /^(latest|fpm)(-alpine)?$/
+        - /^[0-9.]+(-(latest|fpm))?(-alpine)?$/
