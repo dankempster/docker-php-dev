@@ -1,0 +1,11 @@
+language: php
+php:
+  - 7.1
+
+services:
+  - docker
+
+install:
+  - docker build -t php .
+script:
+  - docker run --name composer php composer list
