@@ -1,4 +1,4 @@
-FROM dankempster/composer:alpine
+FROM dankempster/php:fpm-alpine
 
 MAINTAINER dev@dankempster.co.uk
 
