@@ -1,0 +1,17 @@
+language: php
+python:
+  - 7.0
+
+services:
+  - docker
+
+install:
+  - docker build -t php .
+
+script:
+  ### Test Composer
+  #
+  # Install composer
+  - docker run --rm -v composer:/composer php init-composer.sh
+  # User composer
+  - docker run --rm -v composer:/composer php composer -V
