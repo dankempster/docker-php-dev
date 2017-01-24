@@ -1,0 +1,17 @@
+language: php
+python:
+  - 7.0
+
+services:
+  - docker
+
+install:
+  - docker build -t php .
+
+script:
+  - docker run --rm -v composer:/composer php -v
+  - docker run --rm -v composer:/composer php -i | grep xdebug
+  # TODO Test for PHP error level
+  - docker run --rm -v composer:/composer php -i | grep error_reporting
+  # TODO Test for Display Erros on
+  - docker run --rm -v composer:/composer php -i | grep xdebug
