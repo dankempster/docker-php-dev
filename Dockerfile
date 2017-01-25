@@ -1,4 +1,4 @@
-FROM dankempster/composer:5.5-alpine
+FROM dankempster/composer:5.5-base-alpine
 
 MAINTAINER dev@dankempster.co.uk
 
