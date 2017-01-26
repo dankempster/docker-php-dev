@@ -1,0 +1,18 @@
+language: php
+php:
+  - 7.0
+
+services:
+  - docker
+
+install:
+  - docker build -t php .
+
+script:
+  - bash ./test.sh php
+
+branches:
+  only:
+    - alpine
+    - /^(latest|fpm)(-alpine)?$/
+    - /^[0-9.]+(-(latest|fpm))?(-alpine)?$/
