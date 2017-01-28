@@ -2,7 +2,7 @@
 
 | Branch         | Build status                                                                                                                            |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| latest         | [![Build Status](https://travis-ci.org/dankempster/docker-php-dev.svg?branch=master)](https://travis-ci.org/dankempster/docker-php-dev)         |
+| latest         | [![Build Status](https://travis-ci.org/dankempster/docker-php-dev.svg?branch=latest)](https://travis-ci.org/dankempster/docker-php-dev)         |
 | fpm            | [![Build Status](https://travis-ci.org/dankempster/docker-php-dev.svg?branch=fpm)](https://travis-ci.org/dankempster/docker-php-dev)            |
 | alpine         | [![Build Status](https://travis-ci.org/dankempster/docker-php-dev.svg?branch=alpine)](https://travis-ci.org/dankempster/docker-php-dev)         |
 | fpm-alpine     | [![Build Status](https://travis-ci.org/dankempster/docker-php-dev.svg?branch=fpm-alpine)](https://travis-ci.org/dankempster/docker-php-dev)     |
